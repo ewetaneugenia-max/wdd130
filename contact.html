@@ -53,12 +53,12 @@
             <h2>Meet Our Team</h2>
 
             <figure>
-                <img src="images/employee1.jpg" alt="River Guide John">
+                <img src="images/employee.png" alt="River Guide John">
                 <figcaption>John Parker — Senior River Guide</figcaption>
             </figure>
 
             <figure>
-                <img src="images/employee2.jpg" alt="Guest Manager Sarah">
+                <img src="images/employee2.png" alt="Guest Manager Sarah">
                 <figcaption>Sarah Lee — Guest Services Manager</figcaption>
             </figure>
 
@@ -71,7 +71,6 @@
         <!-- Contact Form Section -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
-
             <form action="#" method="post">
 
                 <label for="fullname">Your Name</label>
@@ -82,21 +81,33 @@
 
                 <p><strong>Purpose of Your Message:</strong></p>
 
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                    General Inquiry
+                </label>
+
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
+
+                <label for="purpose-suggestion">
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
 
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label class="subscribe">
-                    <input type="checkbox" name="subscribe">
+                <label class="subscribe" for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
 
             </form>
+
         </section>
 
     </main>
