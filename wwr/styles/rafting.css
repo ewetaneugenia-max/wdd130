@@ -207,3 +207,104 @@ figcaption {
 .contact-form button:hover {
   background-color: var(--accent1-color);
 }
+
+/* ================================
+   TRIPS PAGE STYLES
+================================ */
+
+/* Call To Action */
+.cta {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+}
+
+.cta h1 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color);
+}
+
+/* Trips Grid Layout */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.trip-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.trip-card h2 {
+  margin: 0.5rem 0;
+}
+
+.trip-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.trip-card li {
+  padding: 4px 0;
+}
+
+/* Trips Table */
+.trips-table {
+  margin: 3rem 0;
+}
+
+.trips-table h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  text-align: center;
+}
+
+.trips-table th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #e6f2f5;
+}
